@@ -29,20 +29,25 @@
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) {
-  const reverseString = int
-    .toString()
-    .split("")
-    .reverse()
-    .join("");
-  return parseInt(reverseString) * Math.sign(int);
-}
+// function reverseInt(int) {
+//   const reverseString = int
+//     .toString()
+//     .split("")
+//     .reverse()
+//     .join("");
+//   return parseInt(reverseString) * Math.sign(int);
+// }
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-function capitalizeLetters(str) {}
-
+function capitalizeLetters(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map(word => word[0].toUpperCase() + word.substr(1))
+    .join(" ");
+}
 // CHALLENGE 5: MAX CHARACTER
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') == 'a'
@@ -53,6 +58,6 @@ function maxCharacter(str) {}
 function fizzBuzz() {}
 
 // Call Function
-const output = reverseInt(-123);
+const output = capitalizeLetters("jak sie masz");
 
 console.log(output);
