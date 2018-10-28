@@ -2,22 +2,28 @@
 // Return a string in reverse
 // ex. reverseString('hello') === 'olleh'
 
-function reverseString(str) {
-  // return str
-  //   .split("")
-  //   .reverse()
-  //   .join('');
-  ///////////////////////
-  // let reverseString = "";
-  // str.split("").forEach(element => (reverseString = element + reverseString));
-  // return reverseString;
-}
+// function reverseString(str) {
+// return str
+//   .split("")
+//   .reverse()
+//   .join('');
+///////////////////////
+// let reverseString = "";
+// str.split("").forEach(element => (reverseString = element + reverseString));
+// return reverseString;
+// }
 
 // CHALLENGE 2: VALIDATE A PALINDROME
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
-function isPalindrome(str) {}
+// function isPalindrome(str) {
+//   const reverseString = str
+//     .split("")
+//     .reverse()
+//     .join("");
+//   return reverseString === str;
+// }
 
 // CHALLENGE 3: REVERSE AN INTEGER
 // Return an integer in reverse
@@ -40,6 +46,6 @@ function maxCharacter(str) {}
 function fizzBuzz() {}
 
 // Call Function
-const output = reverseString("hello");
+const output = isPalindrome("hello");
 
 console.log(output);
