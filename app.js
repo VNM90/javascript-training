@@ -29,7 +29,14 @@
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) {}
+function reverseInt(int) {
+  const reverseString = int
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
+  return parseInt(reverseString) * Math.sign(int);
+}
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
@@ -46,6 +53,6 @@ function maxCharacter(str) {}
 function fizzBuzz() {}
 
 // Call Function
-const output = isPalindrome("hello");
+const output = reverseInt(-123);
 
 console.log(output);
